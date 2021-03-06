@@ -1,0 +1,39 @@
+@import '../tokens'
+
+.header
+	background-color: $base-darker
+	display: flex
+	align-items: center
+	justify-content: space-between
+	height: 80px
+	padding: 0 10px
+	box-shadow: $box-shadow
+	&__figure__logo
+			height: 31px
+	&__nav
+		&__login
+			color: $neutral-brightest
+			font-weight: $FWmedium
+			margin-right: 10px
+			word-wrap: break-word
+			text-decoration: none
+		&__signup
+			background-color: $accent
+			font-weight: $FWmedium
+			padding: 5px 5px
+			border-radius: 5px
+			text-decoration: none
+			color: $neutral-darkest
+	&__nav--logged
+		display: flex
+		align-items: center
+		&__notifications-icon
+			margin-left: 10px
+			cursor: pointer
+		&__arrow-icon
+			margin-left: 10px
+			cursor: pointer
+		&__avatar-image
+			height: 40px
+			border-radius: 50px
+			margin-left: 10px
